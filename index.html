@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -19,14 +19,14 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"بحث...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 <meta name="description" content="NoobStudio的小站">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NoobStudio&#39;s Blog">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="NoobStudio&#39;s Blog">
 <meta property="og:description" content="NoobStudio的小站">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="NoobStudio">
 <meta property="article:tag" content="NoobStudio,NS,前端,c++,编程,初中生,程序员,程序猿,学生">
 <meta name="twitter:card" content="summary">
@@ -36,7 +36,7 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-Hans","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>NoobStudio's Blog</title>
@@ -57,7 +57,10 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تشغيل شريط التصفح" role="button">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -79,6 +82,14 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+  </ul>
+</nav>
 
 
 
@@ -97,10 +108,10 @@
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          المحتويات
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          عام
+          站点概览
         </li>
       </ul>
 
@@ -120,9 +131,19 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">المقالات</span>
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -140,7 +161,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="Back to top">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -160,7 +181,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/hexo%E5%BB%BA%E7%AB%99/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/02/hexo%E5%BB%BA%E7%AB%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +194,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/01/hexo%E5%BB%BA%E7%AB%99/" class="post-title-link" itemprop="url">بدون عنوان</a>
+          <a href="/2021/08/02/hexo%E5%BB%BA%E7%AB%99/" class="post-title-link" itemprop="url">Hexo建站指南</a>
         </h2>
 
         <div class="post-meta-container">
@@ -182,17 +203,26 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">نُشر في</span>
+      <span class="post-meta-item-text">发表于</span>
 
-      <time title="أُنشأ: 2021-08-01 22:48:59" itemprop="dateCreated datePublished" datetime="2021-08-01T22:48:59+08:00">2021-08-01</time>
+      <time title="创建时间：2021-08-02 00:00:00" itemprop="dateCreated datePublished" datetime="2021-08-02T00:00:00+08:00">2021-08-02</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
-        <span class="post-meta-item-text">عُدل في</span>
-        <time title="عُدل: 2021-08-02 11:15:07" itemprop="dateModified" datetime="2021-08-02T11:15:07+08:00">2021-08-02</time>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-08-03 12:42:29" itemprop="dateModified" datetime="2021-08-03T12:42:29+08:00">2021-08-03</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
+        </span>
+    </span>
 
   
 </div>
@@ -237,8 +267,8 @@
 <p><img src="https://z3.ax1x.com/2021/08/01/fSP6KK.png" alt="创建储存库"></p>
 <p>进入储存库后点击Settings，往下滑找到GitHub Pages。</p>
 <p><img src="https://z3.ax1x.com/2021/08/01/fSPcDO.png" alt="GitHub Pages"></p>
-<p>点击Check it out here!，将Source里的Branch分支改成master，点击Save就好了，如果已经是这样了那就不用改了。</p>
-<p><img src="https://z3.ax1x.com/2021/08/01/fSPz2q.png" alt="分支"></p>
+<p>点击Check it out here!，将Source里的Branch分支改成main，点击Save就好了，如果已经是这样了那就不用改了。</p>
+<p><img src="https://z3.ax1x.com/2021/08/02/fpDPA0.png" alt="分支"></p>
 <p>然后你就可以通过之前设置的加**.github.io**的储存库名字来访问你自己的网页了，也就是下图的<a target="_blank" rel="noopener" href="https://noobstudio233.github.io/%E3%80%82">https://noobstudio233.github.io/。</a></p>
 <p><img src="https://z3.ax1x.com/2021/08/01/fSPWUH.png" alt="image-20210801193401276"></p>
 <p><img src="https://z3.ax1x.com/2021/08/01/fSPf5d.png" alt="访问的网页"></p>
@@ -271,15 +301,17 @@
 <p>安装好了以后再输入<code>hexo g</code>生成静态网页，再输入<code>hexo d</code>上传到GitHub就可以了，</p>
 <p>然后上GitHub把分支调成master就可以看到推送的博客文件了。</p>
 <p><img src="https://z3.ax1x.com/2021/08/01/fSiCrT.png" alt="文件"></p>
+<p>接着把设置中的Github Page里的分支改成master就好了，如果已经是这样了那就不用改了。</p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSPz2q.png" alt="分支"></p>
 <p>然后上你的博客看看吧，地址就是你的储存库名字，如下图的noobstudio233.github.io。</p>
 <p><img src="https://z3.ax1x.com/2021/08/01/fSiSx0.png" alt="地址"></p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801204943806.png" alt="博客网页"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSieR1.png" alt="博客网页"></p>
 <p>这就大功告成啦！！！</p>
 <h2 id="四、配置博客"><a href="#四、配置博客" class="headerlink" title="四、配置博客"></a>四、配置博客</h2><p>虽然已经推送到GitHub上了，博客也能访问了，但是这个博客的标题却还是默认的“Hexo”</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801205237731.png" alt="标题"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSi9MV.png" alt="标题"></p>
 <p>主题也是默认的<strong>338主题</strong>。那我们怎么更改这些呢？这时候配置文件就派上用场了。</p>
 <h3 id="4-1、修改博客信息"><a href="#4-1、修改博客信息" class="headerlink" title="4.1、修改博客信息"></a>4.1、修改博客信息</h3><p>首先打开**_config.yml<strong>配置文件，找到</strong>Site**注释的地方，这里是博客的基本信息。</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801205735786.png" alt="配置文件"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSiPqU.png" alt="配置文件"></p>
 <p>这些都按照个人需要修改，下图是所有配置的意思：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: # 标题</span><br><span class="line">subtitle: # 副标题</span><br><span class="line">description: # 站点描述</span><br><span class="line">keywords: # 搜索关键词</span><br><span class="line">author: # 作者</span><br><span class="line">language: zh-Hans # 语言</span><br><span class="line">timezone: # 时区</span><br></pre></td></tr></table></figure>
 
@@ -288,97 +320,15 @@
 <h3 id="4-2、更改主题"><a href="#4-2、更改主题" class="headerlink" title="4.2、更改主题"></a>4.2、更改主题</h3><p>这个388主题，说实话太难看了，因此要去找一个好看的主题，Hexo官方专门提供了一个主题库，可以找到非常多的Hexo主题，并下载更换。</p>
 <p>个人觉得<strong>NexT</strong>主题挺好看的，主要是简约，所以我就拿NexT主题为例更换吧。</p>
 <p>首先，打开<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题库</a>,搜索NexT，</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801211215002.png" alt="NexT"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSika4.png" alt="NexT"></p>
 <p>你可以用鼠标移到主题的图片上（不包含主题的名字）直到出现一个小眼睛后点击图片来预览主题效果。</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801211351655.png" alt="预览"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSiFZF.png" alt="预览"></p>
 <p>点击主题的名字，就可以跳转到主题的下载页面，</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801211544611.png" alt="下载"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSiAIJ.png" alt="下载"></p>
 <p>往下滑找到<strong>Installation</strong>标签，这包含了主题的下载安装方法，这里我们选择较快的npm下载。</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801211704817.png" alt="方法"></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSiVi9.png" alt="方法"></p>
 <p>用cmd切换到博客的根目录，也就是blog文件夹中，输入<code>npm install hexo-theme-next</code>就可以安装NexT主题了，npm安装的NexT主题的目录在<strong>node_modules</strong>文件夹下的<strong>hexo-theme-next</strong>文件夹中，里面包含了NexT的配置文件。</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801213017282.png" alt="目录"></p>
-<h2 id="五、博客美化"><a href="#五、博客美化" class="headerlink" title="五、博客美化"></a>五、博客美化</h2><p>原来的NexT主题也不符合我的要求，</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801213308531.png" alt="NexT"></p>
-<p>你可以在主题目录下的**_config.yml**配置文件里修改主题的配置。</p>
-<h3 id="5-1、修改主题外观"><a href="#5-1、修改主题外观" class="headerlink" title="5.1、修改主题外观"></a>5.1、修改主题外观</h3><p>NexT自带了4种外观，分别是：Muse、Mist、Pisces、Gemini，可以通过scheme来设置</p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801224343721.png" alt="Muse"></p>
-<p><img src="C:\Users\noobs\AppData\Roaming\Typora\typora-user-images\image-20210801224434624.png" alt="Mist"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="NoobStudio">
-      <meta itemprop="description" content="NoobStudio的小站">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NoobStudio's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">نُشر في</span>
-
-      <time title="أُنشأ: 2021-08-01 15:09:07" itemprop="dateCreated datePublished" datetime="2021-08-01T15:09:07+08:00">2021-08-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img src="https://z3.ax1x.com/2021/08/01/fSiZGR.png" alt="目录"></p>
 
       
     </div>
@@ -413,7 +363,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">NoobStudio</span>
 </div>
-  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
     </div>
@@ -421,7 +371,7 @@
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
 
